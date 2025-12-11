@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(page_title="Wine Quality Predictor", layout="centered")
 
-st.title("🍷 Wine Quality Prediction")
+st.title(" Wine Quality Prediction")
 st.write("Enter the wine features to predict its quality.")
 
 # Input fields
@@ -26,7 +26,7 @@ if st.button("Predict Quality"):
         response = requests.post(API_URL, json=data)
         if response.status_code == 200:
             result = response.json()
-            st.success(f"Predicted Wine Quality: **{result['predicted_quality']}** ⭐")
+            st.success(f"Predicted Wine Quality: **{result['predicted_quality']}**")
         else:
             st.error("Error: Could not get prediction")
     except Exception as e:
