@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wine Quality Prediction — Sidharth</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <button class="toggle" onclick="toggleMode()">Dark Mode</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Wine Quality Prediction</h1>
+  <p>Classification pipeline & Interactive demo</p>
+</header>
+
+<section>
+  <h2>Overview</h2>
+  <div class="card">
+    <p>This project builds a classification pipeline to predict wine quality from chemical properties (pH, alcohol, sulphates, etc.). The workflow includes exploratory data analysis, feature selection, model training (RandomForest / XGBoost), and a small Streamlit demo to visualize predictions and feature importance.</p>
+
+    <p><strong>Key points:</strong></p>
+    <ul>
+      <li>Dataset: UCI wine quality dataset.</li>
+      <li>Approach: feature prep, cross-validation, model comparison, and simple calibration.</li>
+      <li>Result: prototype classifier with ~0.75 accuracy and an interactive demo to explore inputs.</li>
+    </ul>
+
+    <p><strong>Tech:</strong> Python, Pandas, Scikit-learn, XGBoost, Streamlit</p>
+    <p><a href="https://github.com/Sidharth-in-git/winequality" target="_blank" rel="noopener">View repository</a></p>
+    <p><a href="projects.html">← Back to Projects</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Sidharth | Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

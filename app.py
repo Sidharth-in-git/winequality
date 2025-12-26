@@ -19,7 +19,7 @@ st.markdown(
 )
 
 # --- COLOR SETTINGS ---
-st.sidebar.header("Customize Colors")
+st.sidebar.header("Customize Colors")d:
 
 # Background and text
 bg_color = st.sidebar.color_picker("Background Color", "#420505")
